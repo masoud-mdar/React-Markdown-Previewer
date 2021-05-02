@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(25,25,25);
+    transition: 2500ms;
+}
+
+.app-container{
+    position: relative;
+    top: 0;
+    height: 100vh;
+    text-align: center;
+    margin: auto;
+    background-color: rgb(25,25,25);
+    
+}
+
+.title{
+    /*position:absolute;*/
+    color: #1A4341;
+    font-family: cursive;
+    font-size: 64px;
+
+}
+.quote-box{
+    position: absolute;
+    top: 5vh;
+    width: 25vw;
+    left: 70%;
+    height:75vh;
+    margin:auto;
+    background-color: rgb(25,25,25);
+    color: rgba(255,255,255,.75);
+    border: 5px solid orange;
+    border-radius: 10px;
+    text-align: justify;
+    overflow: auto;
+}
+.quote-box:focus {
+    outline: none;
+}
+
+.preview-box{
+    position: absolute;
+    top: 5vh;
+    bottom: 100px;
+    width: 50vw;
+    left: 5%;
+    height:80vh;
+    background-color: rgb(25,25,25);
+    color: rgba(255,255,255,.75);
+    border: 5px solid orange;
+    border-radius: 10px;
+    text-align: justify;
+    overflow: auto;
+    margin-bottom: 100px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(25,25,25); 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: orange;
+    
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(178, 156, 32);
+}
